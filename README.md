@@ -8,7 +8,7 @@ by adding `jungle-inflexor` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:jungle-inflexor, "~> 0.1.0"}
+    {:jungle_inflexor, "~> 0.1.0"}
   ]
 end
 ```
