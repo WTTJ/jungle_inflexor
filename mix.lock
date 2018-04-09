@@ -1,0 +1,2 @@
+%{"iconv": {:hex, :iconv, "1.0.7", "f81eb6b8c977b1fd078515937fdce64292d64c6102353fbbfe57db580f4689d1", [], [{:p1_utils, "1.0.11", [hex: :p1_utils, repo: "hexpm", optional: false]}], "hexpm"},
+  "p1_utils": {:hex, :p1_utils, "1.0.11", "a471f80644d4b464fa67572affddda7e95df5d4b099624b8907f5726e8a1769c", [], [], "hexpm"}}
