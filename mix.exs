@@ -41,11 +41,12 @@ defmodule Jungle.Inflexor.Mixfile do
 
   defp package do
     [
-     name: :jungle_inflexor,
-     files: ["lib", "mix.exs", "README*", "LICENSE*"],
-     maintainers: ["WTTJ"],
-     licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/wttj/jungle_inflexor" }
+      name: :jungle_inflexor,
+      organization: "WTTJ",
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      maintainers: ["shawarma@wttj.co"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/wttj/jungle_inflexor" }
     ]
   end
 end
