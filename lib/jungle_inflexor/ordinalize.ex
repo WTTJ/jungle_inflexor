@@ -1,6 +1,19 @@
 defmodule Jungle.Inflexor.Ordinalize do
 
-  def ordinal(number) do
+  @doc """
+  Turns a number into an ordinal string used to denote the position in an ordered sequence such as 1st, 2nd, 3rd, 4th.
+
+  ## Examples
+
+      iex> Jungle.Inflexor.ordinalize("quizzes")
+      "quiz"
+
+  """
+  def ordinalize(number) do
+    "#{number}#{ordinal(number)}"
+  end
+
+  defp ordinal(number) do
     abs_number = abs(number)
 
     cond do
@@ -12,7 +25,4 @@ defmodule Jungle.Inflexor.Ordinalize do
     end
   end
 
-  def ordinalize(number) do
-    "#{number}#{ordinal(number)}"
-  end
 end

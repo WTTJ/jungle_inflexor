@@ -1,5 +1,14 @@
 defmodule Jungle.Inflexor.Parameterize do
 
+  @doc """
+  Replaces special characters in a string so that it may be used as part of a ‘pretty’ URL.
+
+  ## Examples
+
+      iex> Jungle.Inflexor.parameterize("jungle inflexor", "-")
+      "jungle-inflexor"
+
+  """
   def parameterize(string, option\\"-") do
     string
     |> String.normalize(:nfd)

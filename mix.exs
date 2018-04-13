@@ -10,7 +10,11 @@ defmodule Jungle.Inflexor.Mixfile do
       elixir: "~> 1.5",
       deps: deps(),
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      description: description(),
+      package: package(),
+      name: "Jungle.Inflexor",
+      source_url: "https://github.com/WTTJ/jungle-inflexor",
+      docs: [main: "Jungle.Inflexor", extras: ["README.md"]]
     ]
   end
 
@@ -24,7 +28,24 @@ defmodule Jungle.Inflexor.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:iconv, "~> 1.0.7"}
+      {:iconv, "~> 1.0.7"},
+      {:ex_doc, "~> 0.18.3"}
+    ]
+  end
+
+  defp description do
+    """
+    Elixir version of Rails ActiveSupport::Inflector
+    """
+  end
+
+  defp package do
+    [
+     name: :jungle_inflexor,
+     files: ["lib", "mix.exs", "README*", "LICENSE*"],
+     maintainers: ["WTTJ"],
+     licenses: ["MIT"],
+     links: %{"GitHub" => "https://github.com/wttj/jungle_inflexor" }
     ]
   end
 end

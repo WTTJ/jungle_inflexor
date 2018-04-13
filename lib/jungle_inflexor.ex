@@ -3,10 +3,11 @@ defmodule Jungle.Inflexor do
   Documentation for Jungle.Inflexor
   """
 
+  @doc false
   defdelegate parameterize(string), to: Jungle.Inflexor.Parameterize
   defdelegate parameterize(string, option), to: Jungle.Inflexor.Parameterize
 
-  defdelegate ordinalize(number), to: Jungle.Inflexor.Ordinalize
+  defdelegate ordinalize(nummber), to: Jungle.Inflexor.Ordinalize
 
   defdelegate underscore(string), to: Jungle.Inflexor.Underscore
 

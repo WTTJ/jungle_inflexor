@@ -211,10 +211,29 @@ defmodule Jungle.Inflexor.Inflections do
      {~r/(?i)s$/, ""}
     ]
 
+
+  @doc """
+  Returns the plural form of the word in the string.
+
+  ## Examples
+
+      iex> Jungle.Inflexor.pluralize("movie")
+      "movies"
+
+  """
   def pluralize(string, locale \\ "en") do
     apply_inflections(string, @plural)
   end
 
+  @doc """
+  The reverse of `pluralize`:w, returns the singular form of a word in a string.
+
+  ## Examples
+
+      iex> Jungle.Inflexor.singularize("quizzes")
+      "quiz"
+
+  """
   def singularize(string, locale \\ "en") do
     apply_inflections(string, @singular)
   end

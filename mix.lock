@@ -1,2 +1,4 @@
-%{"iconv": {:hex, :iconv, "1.0.7", "f81eb6b8c977b1fd078515937fdce64292d64c6102353fbbfe57db580f4689d1", [], [{:p1_utils, "1.0.11", [hex: :p1_utils, repo: "hexpm", optional: false]}], "hexpm"},
+%{"earmark": {:hex, :earmark, "1.2.5", "4d21980d5d2862a2e13ec3c49ad9ad783ffc7ca5769cf6ff891a4553fbaae761", [], [], "hexpm"},
+  "ex_doc": {:hex, :ex_doc, "0.18.3", "f4b0e4a2ec6f333dccf761838a4b253d75e11f714b85ae271c9ae361367897b7", [], [{:earmark, "~> 1.1", [hex: :earmark, repo: "hexpm", optional: false]}], "hexpm"},
+  "iconv": {:hex, :iconv, "1.0.7", "f81eb6b8c977b1fd078515937fdce64292d64c6102353fbbfe57db580f4689d1", [], [{:p1_utils, "1.0.11", [hex: :p1_utils, repo: "hexpm", optional: false]}], "hexpm"},
   "p1_utils": {:hex, :p1_utils, "1.0.11", "a471f80644d4b464fa67572affddda7e95df5d4b099624b8907f5726e8a1769c", [], [], "hexpm"}}
