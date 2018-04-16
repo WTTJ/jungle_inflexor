@@ -42,7 +42,6 @@ defmodule Jungle.Inflexor.Mixfile do
   defp package do
     [
       name: :jungle_inflexor,
-      organization: "WTTJ",
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["shawarma@wttj.co"],
       licenses: ["MIT"],
