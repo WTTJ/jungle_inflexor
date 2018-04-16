@@ -2,7 +2,6 @@ defmodule Jungle.InflexorTest do
   use ExUnit.Case
 
   import Jungle.Inflexor
-  alias Jungle.Inflexor.InflectionCases
 
   test :parameterize do
     assert parameterize("jungle inflexor")                       == "jungle-inflexor"

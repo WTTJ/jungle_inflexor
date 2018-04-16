@@ -11,8 +11,8 @@ defmodule Jungle.Inflexor.Inflections do
       "movies"
 
   """
-  def pluralize(string, locale \\ "en") do
-    apply_inflections(string, plural_expressions)
+  def pluralize(string) do
+    apply_inflections(string, plural_expressions())
   end
 
   @doc """
@@ -24,8 +24,8 @@ defmodule Jungle.Inflexor.Inflections do
       "quiz"
 
   """
-  def singularize(string, locale \\ "en") do
-    apply_inflections(string, singular_expressions)
+  def singularize(string) do
+    apply_inflections(string, singular_expressions())
   end
 
   defp singular_expressions do
@@ -52,7 +52,7 @@ defmodule Jungle.Inflexor.Inflections do
     end
   end
 
-  defp is_uncountable?(string, list \\ uncountable_expressions) do
+  defp is_uncountable?(string, list \\ uncountable_expressions()) do
     case Enum.find(list ,fn (regex) ->
       Regex.match?(~r/(?i)(^(?:.*#{regex}))$/, string)
     end) do
