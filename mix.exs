@@ -43,7 +43,7 @@ defmodule Jungle.Inflexor.Mixfile do
     [
       name: :jungle_inflexor,
       organization: "WTTJ",
-      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      files: ["lib", "mix.exs", "README*", "LICENCE*"],
       maintainers: ["shawarma@wttj.co"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/wttj/jungle_inflexor" }
