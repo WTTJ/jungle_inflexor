@@ -5,8 +5,8 @@ defmodule Jungle.Inflexor.Ordinalize do
 
   ## Examples
 
-      iex> Jungle.Inflexor.ordinalize("quizzes")
-      "quiz"
+      iex> Jungle.Inflexor.ordinalize(1)
+      "1st"
 
   """
   def ordinalize(number) do
