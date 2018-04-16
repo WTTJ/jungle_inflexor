@@ -10,7 +10,7 @@ Add the latest stable release to your `mix.exs` file:
 ```elixir
 defp deps do
   [
-    {:jungle_inflexor, "~> 0.1.0"}
+    {:jungle_inflexor, "~> 0.1.1"}
   ]
 end
 
