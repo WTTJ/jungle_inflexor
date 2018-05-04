@@ -81,7 +81,7 @@ defmodule Jungle.Inflexor.Constants do
   )
 
   define plural, quote(do:
-    [
+    Application.get_env(:jungle_inflexor, :plural, []) ++ [
       {~r/(?i)(.*)\b((?:atlas))$/, "atlases"},
       {~r/(?i)(.*)\b((?:beef))$/, "beefs"},
       {~r/(?i)(.*)\b((?:brother))$/, "brothers"},
@@ -143,7 +143,7 @@ defmodule Jungle.Inflexor.Constants do
   )
 
   define singular, quote(do:
-    [
+    Application.get_env(:jungle_inflexor, :singular, []) ++ [
       {~r/(?i)(.*)\b((?:foes))$/, "foe"},
       {~r/(?i)(.*)\b((?:waves))$/, "wave"},
       {~r/(?i)(.*)\b((?:curves))$/, "curve"},

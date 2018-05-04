@@ -29,15 +29,11 @@ defmodule Jungle.Inflexor.Inflections do
   end
 
   defp singular_expressions do
-    Application.get_env(:jungle_inflexor, :singular, []) ++ Constants.singular ++ Constants.irregular
+    Constants.singular ++ Constants.irregular
   end
 
   defp plural_expressions do
-    Application.get_env(:ungle_inflexor, :plural, []) ++ Constants.plural ++ Constants.plural_irregular
-  end
-
-  defp uncountable_expressions do
-    Application.get_env(:jungle_inflexor, :uncountable, []) ++ Constants.uncountable
+    Constants.plural ++ Constants.plural_irregular
   end
 
   defp apply_inflections(string, rules) do
@@ -52,7 +48,7 @@ defmodule Jungle.Inflexor.Inflections do
     end
   end
 
-  defp is_uncountable?(string, list \\ uncountable_expressions()) do
+  defp is_uncountable?(string, list \\ Constants.uncountable) do
     case Enum.find(list ,fn (regex) ->
       Regex.match?(~r/(?i)(^(?:.*#{regex}))$/, string)
     end) do
