@@ -115,7 +115,7 @@ defmodule Jungle.InflexorTest do
       "agency"      => "agencies",
       "movie"       => "movies",
 
-      #FIXME check regexps 
+      #FIXME check regexps
       # "archive"     => "archives",
 
       "index"       => "indices",
@@ -208,6 +208,10 @@ defmodule Jungle.InflexorTest do
       assert pluralize(k) == v
       assert singularize(v) == k
     end)
+  end
+
+  test :dasherize do
+    assert(dasherize("big_under_scores") == "big-under-scores")
   end
 
 end

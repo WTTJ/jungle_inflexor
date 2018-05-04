@@ -10,6 +10,7 @@ defmodule Jungle.Inflexor do
   defdelegate ordinalize(nummber), to: Jungle.Inflexor.Ordinalize
 
   defdelegate underscore(string), to: Jungle.Inflexor.Underscore
+  defdelegate dasherize(string), to: Jungle.Inflexor.Dasherize
 
   defdelegate pluralize(string), to: Jungle.Inflexor.Inflections
   defdelegate singularize(string), to: Jungle.Inflexor.Inflections
