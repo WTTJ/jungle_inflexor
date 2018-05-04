@@ -16,7 +16,7 @@ defmodule Jungle.Inflexor.Inflections do
   end
 
   @doc """
-  The reverse of `pluralize`:w, returns the singular form of a word in a string.
+  The reverse of `pluralize`, returns the singular form of a word in a string.
 
   ## Examples
 
