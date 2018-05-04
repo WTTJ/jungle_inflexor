@@ -220,4 +220,12 @@ defmodule Jungle.Inflexor.Constants do
       {~r/(?i)s$/, ""}
     ]
   )
+
+  define humans, quote(do:
+    Application.get_env(:jungle_inflexor, :humans, [])
+  )
+
+  define acronyms, quote(do:
+    Application.get_env(:jungle_inflexor, :acronyms, [])
+  )
 end

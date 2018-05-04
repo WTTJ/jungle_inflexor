@@ -15,4 +15,8 @@ defmodule Jungle.Inflexor do
   defdelegate pluralize(string), to: Jungle.Inflexor.Inflections
   defdelegate singularize(string), to: Jungle.Inflexor.Inflections
 
+  defdelegate humanize(string), to: Jungle.Inflexor.Humanizations
+  defdelegate humanize(string, opts), to: Jungle.Inflexor.Humanizations
+  defdelegate titleize(string), to: Jungle.Inflexor.Humanizations
+  defdelegate titleize(string, opts), to: Jungle.Inflexor.Humanizations
 end

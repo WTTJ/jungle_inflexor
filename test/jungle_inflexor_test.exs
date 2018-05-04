@@ -214,4 +214,18 @@ defmodule Jungle.InflexorTest do
     assert(dasherize("big_under_scores") == "big-under-scores")
   end
 
+  test :humanize do
+    assert(humanize("employee_salary") == "Employee salary")
+    assert(humanize("author_id") == "Author")
+    assert(humanize("author_id", [capitalize: false]) == "author")
+    assert(humanize("_id") == "Id")
+    assert(humanize("author_id", [keep_id_suffix: true]) == "Author id")
+    assert(humanize("api") == "API")
+
+    assert(titleize("man from the boondocks") == "Man From The Boondocks")
+    assert(titleize("TheManWithoutAPast") == "The Man Without A Past")
+    assert(titleize("x-men: the last stand") == "X Men: The Last Stand")
+    assert(titleize("raiders_of_the_lost_ark") == "Raiders Of The Lost Ark")
+    assert(titleize("string_ending_with_id", keep_id_suffix: true) == "String Ending With Id")
+  end
 end

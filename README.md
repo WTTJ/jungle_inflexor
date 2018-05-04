@@ -27,6 +27,8 @@ Then run `mix deps.get` in your shell to fetch the dependencies.
 * singularize
 * ordinalize
 * underscore
+* humanize
+* titleize
 
 ## Tests
 

@@ -43,7 +43,7 @@ defmodule Jungle.Inflexor.Inflections do
       true ->
         case Enum.find(rules, nil, fn {regex, _} -> Regex.match?(regex,string) end ) do
           nil -> string
-          {regex,repl} -> Regex.replace(regex, string, repl)
+          {regex, repl} -> Regex.replace(regex, string, repl)
         end
     end
   end
