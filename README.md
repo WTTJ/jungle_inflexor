@@ -2,7 +2,7 @@
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+If [available in Hex](https://hex.pm/packages/jungle_inflexor), the package can be installed
 by adding `jungle_inflexor` to your list of dependencies in `mix.exs`:
 
 Add the latest stable release to your `mix.exs` file:
