@@ -30,6 +30,8 @@ Then run `mix deps.get` in your shell to fetch the dependencies.
 * humanize
 * titleize
 
+For some examples, have a look at the [documentation](https://hexdocs.pm/jungle_inflexor)
+
 ## Tests
 
 `mix test`
