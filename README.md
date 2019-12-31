@@ -1,5 +1,9 @@
 # Jungle.Inflexor
 
+## Prerequisites for mac users
+
+You may need to install libicon to use jungle_inflexor. To do so with homebrew, do the following: `brew install libiconv`
+
 ## Installation
 
 If [available in Hex](https://hex.pm/packages/jungle_inflexor), the package can be installed
